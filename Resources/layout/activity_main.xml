@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/weather"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0.1dp" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtCityName"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@android:color/white"
+            android:hint="Enter City Name"
+            android:textColorHint="@android:color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGetWeather"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+        android:background="@drawable/roundbutton"
+            
+            android:text="Check Weather"
+            android:layout_below="@+id/edtCityName"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:padding="20dp"
+    android:layout_weight="0.8">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgWeather"
+        android:layout_centerVertical="true"
+            android:src="@drawable/sunshine"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTemp"
+            android:text="27"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/imgWeather"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWeatherDesc"
+            android:text="Shower Rain"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/imgWeather"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPlace"
+            android:text="Lagos, NG"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/txtWeatherDesc"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+    
+    
+    
+    </RelativeLayout>
+</LinearLayout>
