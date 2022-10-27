@@ -131,5 +131,6 @@ namespace weather_app
                 progressDialog = null;
             }
         }
+
     }
 }
